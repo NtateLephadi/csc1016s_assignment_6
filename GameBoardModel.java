@@ -38,4 +38,8 @@ public class GameBoardModel{
     GameBoardModel gameBoardModel = new GameBoardModel();
     System.out.println(gameBoardModel.toString());
   }
+
+  public Boolean isGameOver(){
+    return this.tileCollection.size() < 36;
+  }
 }
